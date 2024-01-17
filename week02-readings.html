@@ -6,7 +6,29 @@
     <title>Week 02 Demo</title>
 </head>
 <body>
+    <style>
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+    </style>
     
+    <!-- Creating the alert with HTML -->
+    <div class="alert">
+        <strong>Hi there!</strong> You've read an important message.
+    </div>
+
+    <!-- Create alert with JS -->
+    <script>
+        let div = document.createElement('div');
+        div.className = "alert";
+        div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+      
+        document.body.append(div);
+      </script>
     
-</body>
+    </body>
 </html>
