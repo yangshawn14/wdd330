@@ -6,11 +6,24 @@
     <title>Autosave Text Area</title>
 </head>
 <body>
-    <textarea style="width:200px; height: 60px;" id="area" placeholder="Write here"></textarea>
-<br>
-<button onclick="localStorage.removeItem('area');area.value=''">Clear</button>
+    <h1>Autosave Text Area</h1>
+    <textarea id="textarea" style="width: 200px; height: 60px;" placeholder="Write here"></textarea>
+    <button>
+        Clear
+    </button>
+
+    <script>
+        // Get textarea element
+        const textarea = document.getElementById("textarea");
+        
+        //  Load the saved text from localStorage when the page loads
+        textarea.value = localStorage.getItem("autosaveText") || "";
+        
+        //  Add an event listener to save the text to localStorage on every change
+        textarea.addEventListener("input", function () {
+            // Save text to local storage on every change
+            localStorage.setItem("autosaveText", textarea.value);
+        });
+    </script>
 </body>
-<script>
-    
-</script>
 </html>

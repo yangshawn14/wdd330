@@ -45,7 +45,7 @@
         // localStorage practice
         document.addEventListener("DOMContentLoaded", function () {
             // Retrieve color preference from localStorage if available
-            const savedColor = localStorage.getItem("color");
+            const savedColor = localStorage.getItem("color") || "";
 
             // Set initial color based on user's preference or default to "red"
             const initialColor = savedColor || "red";
