@@ -10,6 +10,14 @@
         // Basic localStorage demo
         localStorage.setItem('test', 1);
         alert(localStorage.getItem('test'));
+
+        // Loop through storage objects as an array
+        for(let key in localStorage) {
+            if (!localStorage.hasOwnProperty(key)) {
+                continue; // skip keys that we don't need like "setItem" and "getItem" etc
+            }
+            alert(`${key}: ${localStorage.getItem(key)}`);
+        }
     </script>
 </body>
 </html>
