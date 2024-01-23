@@ -1,0 +1,48 @@
+Basic Usability Principles
+--------------------------
+Learnability: How easily first-time users complete basic tasks.  
+Efficiency: How quickly users perform basic tasks once they’ve learned the design.
+Memorability: The ability of users to remember how to use the system.
+Errors: The amount and severity of errors users make and how easily they can correct them.
+Satisfaction: How pleasant the experience of using the design was.
+
+10 Mobile UX Design Principles
+------------------------------
+1. Content Prioritization
+    - Simple Design is best. Less is MORE.
+    - Display only the essential content and funcitons
+    - Use icons instead of text when possible
+2. Make Navigation Intuitive
+    - Learnability of your design is key!
+    - Users should understand the mapping of design.
+3. Touchscreen Target Sizes
+    - Apple:  44 pixels wide x 44 pixels tall.
+    - Microsoft: 
+            - Suggested: 9mm/34px
+            - Min: 7mm/26px
+    - Not only is the size of the target important, but so is the spacing between targets.
+4. Provide User Control
+    - Allow users to personalize the app
+    - Changing settings, controlling notifications and cancelling actions provides 
+    the user with a sense of control over the system
+5. Legible Text Content
+    - balance between legibility and space conservation
+    - smaller than 16 pixels (or 11 points) becomes challenging to read
+    - rule of thumb is to use 30–40 characters per line 
+6. Make Interface Elements Clearly Visible
+    -  WC3’s Web Content Accessibility Guidelines gives contrast ratio 
+    recommendations for images and text
+7. Hand Position Controls
+    - actions such as delete buttons should be placed in areas harder to reach to avoid errors
+8. Minimize Data Input
+    - minimize the NEED to enter data
+    - provide shortcuts like autofill/complete, 'Remember Me,' and etc.
+9. Create a Seamless Experience
+    - Focus on key user goals by reducing friction
+    - Make content accessible even without an online connection
+    - Make use of the mobile phone’s features, like the camera to scan barcodes,
+    GPS for identifying locations and touch ID in place of passcodes to simplify journeys.
+    - Synchronization across devices is a key priority
+10. Test Your Design
+    - Continuously test and optimize
+    - The earlier you discover your problems, the easier and cheaper it is to fix them.
