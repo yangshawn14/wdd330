@@ -37,7 +37,7 @@
                 
                 // Increment current
                 current++;
-            }, 1000);
+            }, 100);
         }
 
         // Use nested setTimeout
@@ -52,7 +52,7 @@
                 if (current < to) {
                     current++;
                     // Schedule next call with setTimeout
-                    setTimeout(printNextNumber, 1000);
+                    setTimeout(printNextNumber, 100);
                 }
             }
             printNextNumber();
