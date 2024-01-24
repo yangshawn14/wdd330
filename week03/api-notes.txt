@@ -1,0 +1,23 @@
+What are APIs?
+--------------
+Application Programming Interfaces
+- define how software components should interact
+- Like a TV remote. 
+    - provides set of buttons(commands)
+    - User(developer) can press buttons to access functions/info from the TV
++++++++++++++++++
+Browser APIs are built into the Browser
+Examples
+- DOM API allows for DOM manipulation
+- Web Storage Api used through localStorage
+Third-Party APIs are retreived from the Web
+Examples
+- Twitter API allows 
+    - display latest tweets
+    - return specific information
+- Google Maps API 
++++++++++++++++++++
+Framework vs Library
+- Calling method from library, developer is in control
+- With framework, the framework calls the developer's code
++++++++++++++++++++
