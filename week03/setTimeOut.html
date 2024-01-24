@@ -12,15 +12,16 @@
         Using setInterval. <br>
         Using nested setTimeout.
     </p>
-    <div id="setInterval">
-        <h2>setInterval</h2>
-    </div>
-    <div id="setTimeout">
-        <h2>setTimeout</h2>
-    </div>
+    <!-- Buttons to trigger the functions -->
+  <button id="intervalButton">Print Numbers with setInterval</button> <br>
+  <hr style="visibility: hidden;">
+  <button id="timeoutButton">Print Numbers with setTimeout</button>
+
+  <div id="output"></div>
+
     <script>
         // Use setInterval
-        function printNumbers(from, to) {
+        function printNumbersInterval(from, to) {
             // Initialize starting value
             let current = from;
 
@@ -38,6 +39,34 @@
                 current++;
             }, 1000);
         }
+
+        // Use nested setTimeout
+        function printNumbersTimeout(from, to) {
+            // Initialize
+            let current = from;
+
+            // Output current 
+            function printNextNumber() {
+                alert(current);
+                // Keep iterating until reached 'to'
+                if (current < to) {
+                    current++;
+                    // Schedule next call with setTimeout
+                    setTimeout(printNextNumber, 1000);
+                }
+            }
+            printNextNumber();
+        }
+
+        // Event listeners for the buttons
+        document.getElementById("intervalButton").addEventListener("click", () => {
+            printNumbersInterval(1,5);
+        });
+
+        document.getElementById("timeoutButton").addEventListener("click", () => {
+            printNumbersTimeout(1,5);
+        });
+        
     </script>
 </body>
 </html>
