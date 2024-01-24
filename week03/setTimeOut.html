@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set TimeOut Demo</title>
+</head>
+<body>
+    <p>
+        Write a function printNumbers(from, to) that outputs a number every second, starting from from and ending with to. <br>
+        Make two variants of the solution. <br>
+        Using setInterval. <br>
+        Using nested setTimeout.
+    </p>
+    <div id="setInterval">
+        <h2>setInterval</h2>
+    </div>
+    <div id="setTimeout">
+        <h2>setTimeout</h2>
+    </div>
+    <script>
+        // Use setInterval
+        function printNumbers(from, to) {
+            // Initialize starting value
+            let current = from;
+
+            // Set interval to execute every 1 sec
+            const interval = setInterval(() => {
+                // Output current value ie 'from'
+                alert(current);
+                // Check if current has reached 'to'
+                if (current === to) {
+                    // When reached, clear interval
+                    clearInterval(interval);
+                }
+                
+                // Increment current
+                current++;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

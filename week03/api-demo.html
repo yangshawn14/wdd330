@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon API Example</title>
+</head>
+<body>
+  <h1>Pokémon API Example</h1>
+
+  <div id="pokemonInfo"></div>
+  <p id="hello"></p>
+
+  <script>
+    const pokemonDiv = document.querySelector("#pokemonInfo");
+    const hello = document.querySelector("#hello");
+
+    // Make a request to the PokeAPI for information about Pikachu (ID: 25)
+    fetch('https://pokeapi.co/api/v2/pokemon/25')
+      .then(response => response.json())
+      .then(data => {
+        // Create html content with pokemon info
+        const htmlContent = `
+        <p>Name: ${data.name}</p>
+        <p>Height: ${data.height}</p>
+        <p>Weight: ${data.weight}</p>
+        `;
+        pokemonDiv.innerHTML = htmlContent;
+        function helloMessage(phrase, who) {
+        const message = `${phrase}, ${who}!`;
+        hello.innerHTML = message;
+    };
+    setTimeout(helloMessage, 3000, "Hello", `${data.name}`);
+      })
+      .catch(error => console.error('Error:', error));
+
+     // Set timeOut
+    //  function helloMessage(phrase, who) {
+    //     const message = `${phrase}, ${who}!`;
+    //     hello.innerHTML = message;
+    // };
+    // setTimeout(helloMessage, 3000, "Hello", "Pikachu");
+
+      
+      
+  </script>
+</body>
+</html>
