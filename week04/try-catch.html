@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Try-Catch Demo</title>
+    <script type="text/javascript">
+        function findMultiples() {
+            try {
+                // Get the input value from the text field
+                var input = document.getElementById('numbers').value;
+
+                // Trim leading and trailing whitespace, then split by commas
+                var numbers = input.trim().split(',').map(Number);
+
+                // Filter the numbers to find multiples of 3
+                var multiples = numbers.filter(function (number) {
+                    return number % 3 === 0;
+                });
+
+                // Prepare the result message
+                var result = multiples.length > 0 ? multiples.join(', ') : 'No multiples of 3 found.';
+
+                // Display the result
+                document.getElementById('result').textContent = result;
+            } catch (error) {
+                // Handle any errors that occur during execution
+                document.getElementById('result').textContent = 'An error occurred: ' + error.message;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Multiples of 3 Finder</h1>
+
+    <label for="numbers">Enter numbers (comma-separated):</label>
+    <input type="text" id="numbers" />
+
+    <button onclick="findMultiples()">Find Multiples</button>
+
+    <p id="result"></p>
+</body>
+
+</html>
