@@ -1,0 +1,27 @@
+FETCH
+********
+- Used for making requests from servers
+- Retrieve data from APIs
+- Interact with servers
+
+Rest Parameters
+***************
+- Denoted with '...'
+- If at end of function parameters, it gathers the rest of the list of arguments into an array
+- If occurs in function call, it's a 'spread syntax' and expands array into a list
+
+Single Page Apps
+****************
+- Improved user experience
+- faster performance
+- mobile friendliness
+
+- Can become complex
+
+Multi Page Apps
+****************
+- using HTML pages allows users to easily navigate between pages
+- simplified navigation handling
+- simple implementation
+- performance
+    - if optimized properly, HTML files can have fast page loads and transitions.
