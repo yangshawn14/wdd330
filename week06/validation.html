@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+
+<body>
+    <h1>Form Validation Example</h1>
+    <form id="myForm" action="#" method="post" novalidate>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="3" required>
+        </div>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="email" required>
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- <form novalidate>
+        <p>
+            <label for="mail">
+                <span>Please enter an email address:</span>
+                <input type="email" id="mail" name="mail" required minlength="8" />
+                <span class="error" aria-live="polite"></span>
+            </label>
+        </p>
+        <button>Submit</button>
+    </form> -->
+    <script src="validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Methods and Properties</title>
+</head>
+
+<body>
+    <!-- There’s a <select>: 
+    Use JavaScript to:
+    Show the value and the text of the selected option.
+    Add an option: <option value="classic">Classic</option>.
+    Make it selected.
+    Note, if you’ve done everything right, your alert should show blues.-->
+
+    <select id="genres">
+        <option value="rock">Rock</option>
+        <option value="blues" selected>Blues</option>
+    </select>
+
+    <script>
+        let selectedOption = genres.options[genres.selectedIndex];
+        alert(selectedOption.value);
+
+        let newOption = new Option('Classic', 'classic');
+        genres.append(newOption);
+
+        newOption.selected = true;
+    </script>
+</body>
+
+</html>

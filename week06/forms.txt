@@ -1,0 +1,52 @@
+FORM PROPERTIES AND METHODS
+---------------------------
+- A form is available as:
+  document.forms.my; // the form with name="my"
+  document.forms[0]; // the first form in the document
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- Form elements are available as form.elements[name/index], 
+  or can use just form[name/index]. The elements property also 
+  works for <fieldset>.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- Regular Notation
+    - form.elements.login
+- Short Notation
+    - form.login
+
+- Understanding how selectors work seems to help with understanding the structure of form properties.
+
+- A form references all elements, and elements reference the form.
+
+Example:
+<form id="form">
+  <input type="text" name="login">
+</form>
+
+<script>
+  // form -> element
+  let login = form.login;
+
+  // element -> form
+  alert(login.form); // HTMLFormElement
+</script>
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- Use textarea.value, not textarea.innerHTML
+  Please note that even though <textarea>...</textarea> holds its value as nested HTML, 
+  we should never use textarea.innerHTML to access it.
+  It stores only the HTML that was initially on the page, not the current value.
+  Example:
+  input.value = "New value";
+  textarea.value = "New text";
+  
+  input.checked = true; // for a checkbox or radio button
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- For <select>, one can also get the value by the index select.selectedIndex 
+  or through the options collection select.options.
