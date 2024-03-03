@@ -1,0 +1,77 @@
+Definition 
+**********
+JSON Web Tokens (JWTs) are a compact, URL-safe means of representing claims to be transferred between two parties.
+
+Structure 
+**********
+JWTs consist of three parts separated by dots: Header, Payload, and Signature.
+
+Header 
+**********
+Contains metadata about the type of token and the signing algorithm used.
+
+Payload 
+**********
+Contains the claims or statements about the entity (user) and additional data.
+
+Signature 
+**********
+Created by encoding the header, payload, and a secret key using the specified algorithm. 
+It ensures the integrity of the token and allows verification of its authenticity.
+
+Develop, Debug, Learn
+---------------------
+Here are the key points from the speech:
+
+1. Evolution of Web Development
+*******************************
+HTML to JavaScript transition.
+JavaScript enabled interactivity.
+
+2. JavaScript Empowerment
+*******************************
+Enabled creation of interactive experiences.
+Led to a shift away from web development as a profession.
+
+3. Abstractions and Frameworks
+*******************************
+Dependency on abstractions, frameworks, and libraries increased.
+Understanding of underlying technologies diminished.
+
+4. Debugging Challenges
+*******************************
+Initial lack of debugging tools.
+Improvement with tools like Firebug and browser developer tools.
+
+5. Dependency Management
+*******************************
+Build processes and package managers like npm emerged.
+Addressed challenges in managing dependencies.
+
+6. Overreliance on Frameworks
+*******************************
+Trend of excessive reliance on frameworks criticized.
+Can result in code bloat and performance issues.
+
+7. Focus on End Users
+*******************************
+Emphasis on delivering accessible, performant, and secure applications.
+End users should be the primary focus.
+
+8. Legacy Code and Maintenance
+*******************************
+Legacy code often neglected and unmaintained.
+Poses challenges for future developers and user experience.
+
+9. Holistic Developer Tools
+*******************************
+Need for integrated tools encompassing learning, documentation, linting, and debugging.
+Tools should facilitate efficient development workflows.
+
+10. Automation and Open Source
+*******************************
+Embrace automation and open-source collaboration.
+Make development more accessible and empower developers to create better experiences for users.
+
+These points emphasize the need for a balanced approach to web development, focusing on user needs, 
+continuous learning, and leveraging tools effectively while remaining mindful of code quality and performance.
